@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation program</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="form-group">
+    <h3>Введите все числа</h3>
+    <label for="inp_1">Введите число 1:</label>
+    <input type="text" class="form-control" id="inp_1">
+    <label for="inp_2">Введите число 2:</label>git push -u origin master
+    <input type="text" class="form-control" id="inp_2">
+    <label for="inp_3">Введите число 3:</label>
+    <input type="text" class="form-control" id="inp_3">
+    <label for="inp_4">Введите число 4:</label>
+    <input type="text" class="form-control" id="inp_4">
+    <label for="inp_5">Введите число 5:</label>
+    <input type="text" class="form-control" id="inp_5">
+</div>
+<button onclick="multi()"  class="btn btn-primary" >Вывести имассив</button>
+
+<button onclick="saveDynamicDataToFile()"  class="btn btn-primary" >Задокументировать</button>
+<pre id="WTF">
+    import {admin} from './admin.js';
+
+    function multi(){
+
+        let nm1 = document.getElementById('inp_1').value;
+
+        let nm2 = document.getElementById('inp_2').value;
+
+        let nm3 = document.getElementById('inp_3').value;
+
+        let nm4 = document.getElementById('inp_4').value;
+
+        let nm5 = document.getElementById('inp_5').value;
+
+        let array = [];
+
+        array.push(nm1, nm2, nm3, nm4, nm5);
+
+        for(let i in array){
+
+            alert(array[i]);
+         }
+    }
+</pre>
+<script src="js/secondpr.js"></script>
+<script src="js/script.js"></script>
+<script src="js/FileSaver.js"></script>
+</body>
+</html>
