@@ -18,6 +18,4 @@ function multi(){
         alert(array[i]);
     }
 
-    let a = document.getElementById('WTF').innerHTML;
-    alert(a);
 }
